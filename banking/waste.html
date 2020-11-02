@@ -1,0 +1,18 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      accNO = "AC00001";
+      value = JSON.parse(localStorage.getItem("Notification"));
+      for (i = 0; i < 2; i++) {
+        value[accNO][i] = i + 1;
+      }
+      localStorage.setItem("Notification", JSON.stringify(value));
+      console.log(value[accNO][0]);
+    </script>
+  </body>
+</html>

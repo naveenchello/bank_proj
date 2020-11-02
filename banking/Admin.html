@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="signin">
+      <p style="font-family: Parkavenue, cursive; font-size: 3vw">
+        Signin to Account
+      </p>
+      <form action="dash.html">
+      <div class="icons">
+        <input
+          id="uname"
+          class="input-field"
+          type="text"
+          placeholder="Username"
+         
+        />
+        <i class="fa fa-user icon"> </i>
+      </div>
+      <div>
+        <span id="un"></span>
+      </div>
+
+      <div class="icons">
+        <input
+          class="input-field"
+          id="pass"
+          type="password"
+          placeholder="Password"
+         
+        />
+        <i class="fa fa-key icon"> </i>
+      </div>
+      <div>
+        <span id="pd"></span>
+      </div>
+
+      <button type="submit" class="btn1" id="btn" onclick="return login()">
+        Sign in
+      </button>
+      <p id="log" style="display: none">Enter Correct Username and Password</p>
+    </div>
+</form>
+    <script src="script.js"></script>
+  </body>
+</html>

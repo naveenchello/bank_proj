@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .manben {
+        width: 100%;
+        height: 97%;
+        padding: 5%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        background-color: #dddddd;
+        /* justify-content: center;
+  align-items: center; */
+        color: white;
+        /* overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden; */
+      }
+      .title-b {
+        display: flex;
+        justify-content: space-between;
+        color: black;
+        font-size: 3vw;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      .notif-b {
+        width: 100%;
+        /* height: 50vh; */
+        margin: 10% auto;
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        color: black;
+        padding: 1%;
+        font-size: 1.1vw;
+        overflow-y: scroll;
+        overflow: hidden;
+        border-radius: 10px;
+      }
+      .btn-b {
+        display: flex;
+        justify-content: space-around;
+        padding: 1%;
+
+        border-bottom: 1px solid #dddddd;
+      }
+      .btn-b button,
+      .b-list button {
+        width: 100%;
+        border-radius: 10px;
+        /* height: 35px; */
+        padding: 1%;
+        outline: none;
+        border: none;
+        color: white;
+        /* background-image: linear-gradient(to right, #1cd8d2, #93edc7); */
+        background-image: linear-gradient(
+          to right,
+          #0f0c29,
+          #302b63,
+          #24243e
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        text-align: center;
+        margin-bottom: 5%;
+      }
+      .b-list {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1%;
+        color: black;
+        background-color: white;
+        border-bottom: 1px solid #dddddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="manben">
+      <div class="title-b">
+        <div class="list-b">REQUEST LIST</div>
+      </div>
+      <div class="notif-b">
+        <div class="b-parent"></div>
+
+        <!--<div class="b-list">
+          <div>
+            JR
+            <p>887069002 Indian Bank</p>
+          </div>
+          <p class="status-b" style="color: red">Processing...</p>
+          <div><button>Accept</button> <button>Decline</button></div>
+        </div>
+        <div class="b-list">
+          <div>
+            JR
+            <p>887069002 Indian Bank</p>
+          </div>
+          <p class="status-b" style="color: green">Verified</p>
+          <div><button>Accept</button> <button>Decline</button></div>
+        </div>
+        <div class="b-list">
+          <div>
+            JR
+            <p>887069002 Indian Bank</p>
+          </div>
+          <p class="status-b" style="color: green">Verified</p>
+          <div><button>Accept</button> <button>Decline</button></div>
+        </div>
+        <div class="b-list">
+          <div>
+            JR
+            <p>887069002 Indian Bank</p>
+          </div>
+          <p class="status-b" style="color: green">Verified</p>
+          <div><button>Accept</button> <button>Decline</button></div>
+        </div>
+        <div class="b-list">
+          <div>
+            JR
+            <p>887069002 Indian Bank</p>
+          </div>
+          <p class="status-b" style="color: green">Verified</p>
+          <div><button>Accept</button> <button>Decline</button></div>
+        </div>
+        <div class="b-list">
+          <div>
+            JR
+            <p>887069002 Indian Bank</p>
+          </div>
+          <p class="status-b" style="color: green">Verified</p>
+          <div><button>Accept</button> <button>Decline</button></div>
+        </div>
+        <div class="b-list">
+          <div>
+            JR
+            <p>887069002 Indian Bank</p>
+          </div>
+          <p class="status-b" style="color: green">Verified</p>
+          <div><button>Accept</button> <button>Decline</button></div>
+        </div>
+        <div class="b-list">
+          <div>
+            JR
+            <p>887069002 Indian Bank</p>
+          </div>
+          <p class="status-b" style="color: green">Verified</p>
+          <div><button>Accept</button> <button>Decline</button></div>
+        </div>
+        <div class="b-list">
+          <div>
+            JR
+            <p>887069002 Indian Bank</p>
+          </div>
+          <p class="status-b" style="color: green">Verified</p>
+          <div><button>Accept</button> <button>Decline</button></div>
+        </div>
+        <div class="b-list">
+          <div>
+            JR
+            <p>887069002 Indian Bank</p>
+          </div>
+          <p class="status-b" style="color: green">Verified</p>
+          <div><button>Accept</button> <button>Decline</button></div>
+        </div> -->
+      </div>
+    </div>
+    <script>
+      (function () {
+        var j = 0;
+        // <div class="b-list">
+        //   <div>
+        //     JR
+        //     <p>887069002 Indian Bank</p>
+        //   </div>
+        //   <p class="status-b" style="color: red">Processing...</p>
+        //   <div><button>Accept</button> <button>Decline</button></div>
+        // </div>
+
+        var Acno = [
+          "AC00001",
+          "AC00002",
+          "AC00003",
+          "AC00004",
+          "AC00005",
+          "AC00006",
+          "AC00007",
+          "AC00008",
+          "AC00009",
+          "AC00010",
+        ];
+        var dstr = localStorage.getItem("BNF");
+        var dobj = JSON.parse(dstr);
+        for (var k = 0; k < 10; k++) {
+          for (var i = 0; i < 100; i++) {
+            if (dobj[Acno[k]][i + ""] == "") {
+              break;
+            } else {
+              if (dobj[Acno[k]][i + ""]["status"] == "Processing...") {
+                var bparent = document.getElementsByClassName("b-parent");
+                var blist = document.createElement("div");
+                blist.className = "b-list";
+                blist.innerHTML =
+                  "<div>" +
+                  dobj[Acno[k]][i + ""]["benname"] +
+                  "<p class='hidden'>" +
+                  Acno[k] +
+                  "</p>" +
+                  "<p class='hiddenval' hidden>" +
+                  i +
+                  "</p>" +
+                  "<p>" +
+                  dobj[Acno[k]][i + ""]["accno"] +
+                  " " +
+                  dobj[Acno[k]][i + ""]["ifsc"] +
+                  "</p> </div><p class='status-b' style='color:red'>" +
+                  dobj[Acno[k]][i + ""]["status"] +
+                  "</p><div><button class='accept' onclick='accept(" +
+                  j +
+                  ")'>Accept</button><button class='reject' onclick='decline(" +
+                  j +
+                  ")'>Decline</button></div>";
+                bparent[0].appendChild(blist);
+                j++;
+              } else {
+                // var bparent = document.getElementsByClassName("b-parent");
+                // var blist = document.createElement("div");
+                // blist.className = "b-list";
+                // blist.innerHTML =
+                //   "<div>" +
+                //   dobj[Acno][i + ""]["benname"] +
+                //   "<p>" +
+                //   dobj[Acno][i + ""]["accno"] +
+                //   " " +
+                //   dobj[Acno][i + ""]["ifsc"] +
+                //   "<p> </div><p class='status-b' style='color:green'>" +
+                //   dobj[Acno][i + ""]["status"] +
+                //   "</p><button>Pay</button>";
+                // bparent[0].appendChild(blist);
+                // break;
+                continue;
+              }
+            }
+          }
+        }
+      })();
+      function accept(s) {
+        var accno = document.getElementsByClassName("hidden")[s].innerHTML;
+        var i = document.getElementsByClassName("hiddenval")[s].innerHTML;
+        var dobj = JSON.parse(localStorage.getItem("BNF"));
+        dobj[accno + ""][i + ""]["status"] = "success";
+        localStorage.setItem("BNF", JSON.stringify(dobj));
+        document.getElementsByClassName("accept")[0].style.display = "none";
+        document.getElementsByClassName("b-list")[0].style.display = "none";
+      }
+      function decline(s) {
+        var accno = document.getElementsByClassName("hidden")[s].innerHTML;
+        var i = document.getElementsByClassName("hiddenval")[s].innerHTML;
+        var dobj = JSON.parse(localStorage.getItem("BNF"));
+        dobj[accno + ""][i + ""]["status"] = "rejected";
+        localStorage.setItem("BNF", JSON.stringify(dobj));
+        document.getElementsByClassName("accept")[0].style.display = "none";
+        document.getElementsByClassName("b-list")[0].style.display = "none";
+      }
+    </script>
+  </body>
+</html>
